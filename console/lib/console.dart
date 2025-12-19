@@ -1,6 +1,4 @@
-
 void main() {
-
   print('Hello Dart 👋');
 
   var idade = 28;
@@ -22,17 +20,17 @@ void main() {
 }
 
 class Pessoa {
-  String nome;
-  int idade;
+  final String nome;
+  final int idade;
 
   Pessoa(this.nome, this.idade);
 
   void apresentar(Pessoa obj) {
-    print('parametros : ' + obj.nome);
+    print('parametros : ${obj.nome}');
     print('Meu nome é $nome e tenho $idade');
   }
 
   bool ehImpar() {
-    return 3.isOdd;
+    return idade.isOdd;
   }
 }
